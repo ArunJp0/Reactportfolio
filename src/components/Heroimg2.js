@@ -1,6 +1,8 @@
 import './Heroimg2.css';
 import React from 'react';
 
+
+
 const Heroimg2 = (props) => {
   return (
     <div className='hero-img'>
