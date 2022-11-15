@@ -1,38 +1,39 @@
-import './Footer.css';
-import React from 'react';
-import {FaHome,FaPhone,FaMailBulk,FaFacebook,FaTwitter,FaLinkedin} from 'react-icons/fa';
+import React from 'react'
+import './Footer.css'
+import { Element } from 'react-scroll'
+import { IconButton } from '@material-ui/core'
+ 
+import { GitHub, Instagram, LinkedIn } from '@material-ui/icons'
 
-const Footer = () => {
+const Contact = () => {
   return (
-    <div className='footer'>
-        <div className='footer-container'>
-            <div className='left'>
-              <div className='location'>
-                 
-                 <div>
-                 <h4><FaHome size={20} style={{color:"#fff", marginRight:"2rem" }} />24, Anna Nagar, Chennai.</h4>
-                  </div>
-                 <div className='phone'>
-                    <h4><FaPhone size={20} style={{color:"#fff", marginRight:"2rem" }} />+91 83822 08788</h4>
-                 </div>
-                 <div className='email'>
-                    <h4><FaMailBulk size={20} style={{color:"#fff", marginRight:"2rem" }} />info@gmail.com</h4>
-                 </div>
-              </div>
-            </div>
-
-            <div className='right'>
-                <h4>About the Company</h4>
-                <p>This is me ArunJp. I'm a Freelance Web Developer. I enjoy discussing new projects and design challenges.</p>
-                <div className='social'>
-                <FaFacebook size={30} style={{color:"#fff", marginRight:"1rem" }} />
-                <FaTwitter size={30} style={{color:"#fff", marginRight:"1rem" }} />
-                <FaLinkedin size={30} style={{color:"#fff", marginRight:"1rem" }} />
-                </div>
+    
+    <Element className='contact' id='contact'>
+           <h1>Contact</h1>
+        <div className='contact_container'>
+        
+            <p>Email : <span>prasathjp95@gmail.com</span></p>
+            <p>Github Username : <span>https://github.com/ArunJp0/</span></p>
+            <div className='contact_icons'>
+                <a href='https://instagram.com/_arunjp0?igshid=YmMyMTA2M2Y='>
+                <IconButton>
+                    <Instagram />
+                </IconButton>
+                </a>
+                <a href='https://www.linkedin.com/in/arun-jp-174587a9/'>
+                <IconButton>
+                    <LinkedIn />
+                </IconButton>
+                </a>
+                <a href='https://github.com/ArunJp0/'>
+                <IconButton>
+                    <GitHub />
+                </IconButton>
+                </a>
             </div>
         </div>
-    </div>
+        </Element>
   )
 }
 
-export default Footer
+export default Contact

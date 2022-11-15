@@ -43,6 +43,11 @@
 .content .btn{
     margin: 1rem 0.2rem;
 }
+.content > .typecontent{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
     
 
 /* Media Query */
@@ -53,6 +58,9 @@
     }
     .hero .content p{
         font-size: 1.4rem;
+    }
+    .content > .typecontent{
+        font-size: 24px;
     }
 }
 /* Media Query End */

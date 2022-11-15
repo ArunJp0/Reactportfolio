@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 0;
+}
+.skillContainer_text{
+    color: #fff;
+    text-align: left;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.skillContainer_text > h2{
+    font-size: 30px;
+}
+.skillContainer_image{
+    text-align: center;
+    margin-right: 100px;
+}
+.skillContainer_image >img{
+    width: 500px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+.SkillContainer_skillSet >h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.SkillContainer_slider > .MuiLinearProgress-colorPrimary {
+    background-color: rgb(88, 88, 88);
+}
+.SkillContainer_slider1 > div > .MuiLinearProgress-barColorPrimary {
+    background-color: tomato;
+}
+.SkillContainer_slider2 > div > .MuiLinearProgress-barColorPrimary {
+    background-color: rgb(156, 26, 3)
+}
+.SkillContainer_slider3 > div > .MuiLinearProgress-barColorPrimary {
+    background-color: rgb(180, 125, 53);
+}
+.SkillContainer_slider4 > div > .MuiLinearProgress-barColorPrimary {
+    background-color: rgb(228, 213, 0);
+}
+.SkillContainer_slider5 > div > .MuiLinearProgress-barColorPrimary {
+    background-color: rgb(228, 213, 0);
+}
+.SkillContainer_slider6 > div > .MuiLinearProgress-barColorPrimary {
+    background-color: rgb(60, 221, 227);
+}
+
+
+
+
+/* Media Query */
+@media (max-width: 477px) {
+.skills {
+    flex-wrap: wrap;
+    padding: 20px;
+    overflow: hidden;
+}
+.skillContainer_text{
+    margin-top: 20px;
+}
+.skillContainer_image{
+    max-width: 100%;
+    height: auto;
+}
+}
+/* Media Query End */
+
+/* Media Query */
+@media screen and (min-width: 477px) and (max-width: 799px) {
+    .skills {
+        flex-wrap: wrap;
+    }
+    .skillContainer_text{
+        margin-top: 20px;
+    }
+    .skillContainer_image{
+        max-width: 60%;
+        padding: 0 20px;
+    }
+    }
+    /* Media Query End */

@@ -1,7 +1,5 @@
 import './Workcard.css';
 import React from 'react'
-import pro1 from '../assets/project1.png';
-import { NavLink } from 'react-router-dom';
 
 const Workcard = (props) => {
   return (
@@ -11,8 +9,8 @@ const Workcard = (props) => {
                 <div className='pro-details'>
                     <p>{props.text}</p>
                     <div className='pro-btns'>
-                        <NavLink to="{props.view}" className="btn">View</NavLink>
-                        <NavLink to="url.com" className="btn">Source</NavLink>
+                        <a href={props.view} className="btn">View</a>
+                        
                     </div>
                 </div>
             </div>

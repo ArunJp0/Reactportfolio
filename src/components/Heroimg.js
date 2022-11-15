@@ -2,6 +2,8 @@ import './Heroimg.css';
 import React from 'react';
 import IntroImg from '../assets/intro-bg.jpg';
 import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
+
 
 const heroimg = () => {
   return (
@@ -11,7 +13,20 @@ const heroimg = () => {
         </div>
         <div className='content'>
             <p>HI, IM A FREELANCECR.</p>
-            <h1>Web DEVELOPER.</h1>
+            <div className='typecontent'>
+            <Typewriter
+            options={{
+               autoStart: true,
+               loop: true,
+               delay: 40,
+               strings: [
+                "I'm a Web Developer 💻.",
+                "I'm a FreeLancer 🌐.",
+               ],
+            }}
+            />
+            </div>
+           
             <div>
                 <Link to="/project" className='btn'>Projects</Link>
                 <Link to="/contact" className='btn btn-light'>Contact</Link>

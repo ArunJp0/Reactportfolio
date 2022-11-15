@@ -9,7 +9,7 @@ const Aboutcontent = () => {
     <div className='about'>
        <div className='left'>
         <h1>Who Am I?</h1>
-        <p>Im a Front-End Developer. I create responsive secure websites for my clients.</p>
+        <p>Im a Freelance Web Developer. I create responsive secure websites for my clients.</p>
         <Link to="/contact"><button className='btn'>Contact</button></Link>
        </div>
        
@@ -24,6 +24,10 @@ const Aboutcontent = () => {
         </div>
        </div>
     </div>
+
+    
+
+    
   )
 }
 
